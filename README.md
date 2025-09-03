@@ -8,8 +8,10 @@ primrose/
 ├── requirements.txt
 ├── README.md
 │
+│
 ├── data/
 │   └── sample_claims.csv
+│
 │
 ├── models/
 │   ├── label_encoder.joblib
@@ -17,6 +19,7 @@ primrose/
 │   ├── rf_pipeline.joblib
 │   ├── xgb_bundle.joblib
 │   └── xgb_pipeline.joblib
+│
 │
 ├── outputs/
 │   ├── logs/
