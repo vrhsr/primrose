@@ -1,4 +1,4 @@
-📂 Project Structure
+## Project Structure
 primrose/
 │
 ├── app.py                     # Main Gradio app
@@ -21,38 +21,32 @@ primrose/
 │
 └── README.md                  
 
-⚙️ Installation
+## Installation
 
 Clone this repo:
 
-git clone https://github.com/your-username/primrose.git
+git clone https://github.com/vrhsr/primrose.git
 cd primrose
 
 
-Install dependencies:
+### Install dependencies:
 
 pip install -r requirements.txt
 
-
-(Optional) Train a new model:
+## Jupter noteboook 
 
 jupyter notebook train_model.ipynb
 
 
-This saves xgb_bundle.joblib inside the project.
-
-▶️ Run the Application
-
-Run the Gradio app:
+# Run the Gradio Application
 
 python app.py
 
 
-Console output:
+## Console output:
 
 Running on local URL: http://127.0.0.1:7860
-Running on public URL: https://xxxx.gradio.live
-
+Running on public URL: https://b17747416539cc1828.gradio.live
 
 Open the public URL in browser
 
