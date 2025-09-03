@@ -4,9 +4,9 @@ import joblib
 import pickle
 
 # Load models
-xgb_model = joblib.load("model/xgb_pipeline.joblib")
-rf_model = joblib.load("model/rf_pipeline.joblib")
-with open("model/labelencoder.pkl", "rb") as f:
+xgb_model = joblib.load("models/xgb_pipeline.joblib")
+rf_model = joblib.load("models/rf_pipeline.joblib")
+with open("models/labelencoder.pkl", "rb") as f:
     le_target = pickle.load(f)
 
 st.title("📊 Claim Denial Prediction App")
