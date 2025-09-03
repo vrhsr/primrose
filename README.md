@@ -1,6 +1,7 @@
 
 ### Project Structure
 
+$Tree
 primrose/
 ├── app.py
 ├── requirements.txt
