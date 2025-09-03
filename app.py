@@ -1,34 +1,53 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import pickle
 
 # Load models
-xgb_model = joblib.load("models/xgb_pipeline.joblib")
+logreg_model = joblib.load("models/logreg_pipeline.joblib")
 rf_model = joblib.load("models/rf_pipeline.joblib")
-with open("models/labelencoder.pkl", "rb") as f:
-    le_target = pickle.load(f)
+xgb_model = joblib.load("models/xgb_pipeline.joblib")
+le_target = joblib.load("models/label_encoder.joblib")
 
-st.title("📊 Claim Denial Prediction App")
+st.title("📊 Denial Reason Prediction App")
 
-uploaded_file = st.file_uploader("Upload CSV or Excel", type=["csv", "xlsx"])
+uploaded_file = st.file_uploader("Upload a CSV or Excel file", type=["csv", "xlsx"])
 
-if uploaded_file:
-    if uploaded_file.name.endswith(".csv"):
-        df = pd.read_csv(uploaded_file)
-    else:
-        df = pd.read_excel(uploaded_file)
+if uploaded_file is not None:
+    # Read file safely
+    try:
+        if uploaded_file.name.endswith(".csv"):
+            df_new = pd.read_csv(uploaded_file)
+        else:
+            df_new = pd.read_excel(uploaded_file)
+    except Exception as e:
+        st.error(f"❌ Error reading file: {e}")
+        st.stop()
 
-    st.write("### Uploaded Data", df.head())
+    st.subheader("Preview of Uploaded Data")
+    st.write(df_new.head())
 
-    # Predict
-    preds = xgb_model.predict(df)
-    preds_labels = le_target.inverse_transform(preds)
+    # Model choice
+    model_choice = st.selectbox("Choose model", ["Logistic Regression", "Random Forest", "XGBoost"])
 
-    df["Predicted Denial Reason"] = preds_labels
+    if st.button("Predict"):
+        try:
+            if model_choice == "Logistic Regression":
+                preds = logreg_model.predict(df_new)
+            elif model_choice == "Random Forest":
+                preds = rf_model.predict(df_new)
+            else:
+                preds = xgb_model.predict(df_new)
 
-    st.write("### Predictions", df)
+            # Decode labels
+            preds_decoded = le_target.inverse_transform(preds)
+            df_new["Predicted Denial Reason"] = preds_decoded
 
-    # Download button
-    csv = df.to_csv(index=False).encode("utf-8")
-    st.download_button("Download Predictions", csv, "predictions.csv", "text/csv")
+            st.subheader("Prediction Results")
+            st.write(df_new)
+
+            # Download predictions
+            csv = df_new.to_csv(index=False).encode("utf-8")
+            st.download_button("📥 Download Predictions", csv, "predictions.csv", "text/csv")
+
+        except Exception as e:
+            st.error(f"❌ Prediction failed. Please check your file format.\n\nError: {e}")
