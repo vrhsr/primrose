@@ -1,17 +1,13 @@
 
 ## Project Structure
 
-
 primrose/
-│
 ├── app.py
 ├── requirements.txt
 ├── README.md
 │
-│
 ├── data/
 │   └── sample_claims.csv
-│
 │
 ├── models/
 │   ├── label_encoder.joblib
@@ -20,11 +16,10 @@ primrose/
 │   ├── xgb_bundle.joblib
 │   └── xgb_pipeline.joblib
 │
-│
-├── outputs/
-│   ├── logs/
-│   ├── reports/
-│   └── figures/
+└── outputs/
+    ├── logs/
+    ├── reports/
+    └── figures/
 
 
 ## Installation
