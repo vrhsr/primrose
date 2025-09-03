@@ -26,8 +26,6 @@ primrose/
 
 ## Installation
 
-Clone this repository:
-
 git clone https://github.com/vrhsr/primrose.git
 
 cd primrose
@@ -39,11 +37,7 @@ pip install -r requirements.txt
 
 ## Jupyter Notebook
 
-To explore training and evaluation:
-
 jupyter notebook primrose.ipynb
-
-Run the Gradio Application
 
 ## Start the application:
 
