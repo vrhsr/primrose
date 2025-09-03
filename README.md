@@ -1,5 +1,5 @@
 
-## Project Structure
+### Project Structure
 
 primrose/
 ├── app.py
@@ -22,26 +22,26 @@ primrose/
     └── figures/
 
 
-## Installation
+### Installation
 
 git clone https://github.com/vrhsr/primrose.git
 
 cd primrose
 
 
-## Install the dependencies:
+### Install the dependencies:
 
 pip install -r requirements.txt
 
-## Jupyter Notebook
+### Jupyter Notebook
 
 jupyter notebook primrose.ipynb
 
-## Start the application:
+### Start the application:
 
 python app.py
 
-## Console Output
+### Console Output
 
 When running the application, you should see output similar to:
 
