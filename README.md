@@ -3,26 +3,27 @@
 
 
 primrose/
+
 │
-├── app.py                      # Main Gradio application
-├── requirements.txt            # Python dependencies
+├── app.py
+├── requirements.txt         
 │
-├── data/                       # Sample datasets
+├── data/                       
 │   └── sample_claims.csv
 │
-├── models/                     # Pre-trained ML models and encoders
+├── models/                   
 │   ├── label_encoder.joblib
 │   ├── logreg_pipeline.joblib
 │   ├── rf_pipeline.joblib
 │   ├── xgb_bundle.joblib
 │   └── xgb_pipeline.joblib
 │
-├── outputs/                    # Generated outputs
-│   ├── logs/                   # Logs during training/inference
-│   ├── reports/                # Model evaluation reports
-│   └── figures/                # Plots and visualizations
+├── outputs/                   
+│   ├── logs/                 
+│   ├── reports/               
+│   └── figures/                
 │
-└── README.md                   # Project documentation
+└── README.md                  
 
 ## Installation
 
