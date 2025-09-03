@@ -6,7 +6,9 @@ primrose/
 
 │
 ├── app.py
+│
 ├── requirements.txt         
+│
 │
 ├── data/                       
 │   └── sample_claims.csv
@@ -17,6 +19,7 @@ primrose/
 │   ├── rf_pipeline.joblib
 │   ├── xgb_bundle.joblib
 │   └── xgb_pipeline.joblib
+│
 │
 ├── outputs/                   
 │   ├── logs/                 
