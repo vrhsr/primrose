@@ -1,43 +1,32 @@
----
-title: primrose
-app_file: app.py
-sdk: gradio
-sdk_version: 5.44.1
----
-📊 Claim Denial Prediction App
-
-This project is a machine learning-powered Streamlit app that predicts insurance claim denial reasons based on uploaded claim data.
-
-🚀 Features
-
-Upload CSV/Excel claim files.
-
-Automatically preprocesses categorical data.
-
-Predicts denial reasons using XGBoost / Random Forest models.
-
-Displays predictions in a clean table.
-
-Download predictions as a CSV file.
-
-🏗️ Project Structure
+📂 Project Structure
 primrose/
-│── app.py                  # Streamlit app
-│── model/
-│    ├── xgb_pipeline.joblib
-│    ├── rf_pipeline.joblib
-│    └── labelencoder.pkl
-│── requirements.txt        # Dependencies
-│── data/
-│    └── sample.csv         # Example file (optional)
-│── README.md               # Project documentation
+│
+├── app.py                     # Main Gradio app
+├── requirements.txt           # Python dependencies
+│
+├── data/                      
+│   ├── sample_claims.csv      
+│
+├── models/
+├   ├──label_encoder.joblib
+├   ├──logreg_pipeline.joblib
+│   ├──rf_pipeline.joblib
+│   ├──xgb_bundle.joblib
+│   ├──xgb_pipeline.joblib
+│
+├── outputs/                   
+│   ├── logs/                  
+│   ├── reports/               
+│   └── figures/               
+│
+└── README.md                  
 
-📦 Installation (Run Locally)
+⚙️ Installation
 
-Clone the repo:
+Clone this repo:
 
-git clone https://github.com/your-username/primrose-ml-app.git
-cd primrose-ml-app
+git clone https://github.com/your-username/primrose.git
+cd primrose
 
 
 Install dependencies:
@@ -45,11 +34,26 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Run the app:
+(Optional) Train a new model:
 
-streamlit run app.py
+jupyter notebook train_model.ipynb
 
 
-Open in browser:
+This saves xgb_bundle.joblib inside the project.
 
-http://localhost:8501
+▶️ Run the Application
+
+Run the Gradio app:
+
+python app.py
+
+
+Console output:
+
+Running on local URL: http://127.0.0.1:7860
+Running on public URL: https://xxxx.gradio.live
+
+
+Open the public URL in browser
+
+Upload a .csv or .xlsx file with the following columns:
