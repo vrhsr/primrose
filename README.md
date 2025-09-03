@@ -3,7 +3,7 @@
 
 
 primrose/
-│
+
 ├── app.py # Main Gradio application
 ├── requirements.txt # Python dependencies
 │
