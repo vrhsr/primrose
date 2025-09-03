@@ -1,23 +1,22 @@
 
 ### Project Structure
-
 primrose/
 │
-├── app.py
+├── app.py              # Main FastAPI application
 ├── requirements.txt
 ├── README.md
 │
-├── data/
+├── data/               # Contains sample data
 │   └── sample_claims.csv
 │
-├── models/
+├── models/             # Pre-trained models (DO NOT delete)
 │   ├── label_encoder.joblib
 │   ├── logreg_pipeline.joblib
 │   ├── rf_pipeline.joblib
 │   ├── xgb_bundle.joblib
 │   └── xgb_pipeline.joblib
 │
-├── outputs/
+├── outputs/            # Generated logs, reports, and figures
 │   ├── logs/
 │   ├── reports/
 │   └── figures/
