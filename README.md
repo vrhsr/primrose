@@ -1,8 +1,8 @@
 
 ### Project Structure
 
-$Tree
 primrose/
+│
 ├── app.py
 ├── requirements.txt
 ├── README.md
@@ -17,11 +17,10 @@ primrose/
 │   ├── xgb_bundle.joblib
 │   └── xgb_pipeline.joblib
 │
-└── outputs/
-    ├── logs/
-    ├── reports/
-    └── figures/
-
+├── outputs/
+│   ├── logs/
+│   ├── reports/
+│   └── figures/
 
 ### Installation
 
