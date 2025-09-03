@@ -43,7 +43,6 @@ python app.py
 
 ### Console Output
 
-When running the application, you should see output similar to:
-
 Running on local URL:  http://127.0.0.1:7860
+
 Running on public URL: https://b17747416539cc1828.gradio.live
