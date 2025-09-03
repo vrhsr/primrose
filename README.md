@@ -1,33 +1,26 @@
 
 ## Project Structure
 
-
 primrose/
-
 │
 ├── app.py
+├── requirements.txt
+├── README.md
 │
-│
-├── requirements.txt         
-│
-│
-├── data/                       
+├── data/
 │   └── sample_claims.csv
 │
-├── models/                   
+├── models/
 │   ├── label_encoder.joblib
 │   ├── logreg_pipeline.joblib
 │   ├── rf_pipeline.joblib
 │   ├── xgb_bundle.joblib
 │   └── xgb_pipeline.joblib
 │
-│
-├── outputs/                   
-│   ├── logs/                 
-│   ├── reports/               
-│   └── figures/                
-│
-└── README.md                  
+├── outputs/
+│   ├── logs/
+│   ├── reports/
+│   └── figures/
 
 ## Installation
 
