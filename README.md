@@ -1,3 +1,9 @@
+---
+title: primrose
+app_file: app.py
+sdk: gradio
+sdk_version: 5.44.1
+---
 📊 Claim Denial Prediction App
 
 This project is a machine learning-powered Streamlit app that predicts insurance claim denial reasons based on uploaded claim data.
