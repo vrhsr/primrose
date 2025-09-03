@@ -1,6 +1,7 @@
 
 ## Project Structure
 
+
 primrose/
 │
 ├── app.py # Main Gradio application
