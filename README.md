@@ -29,6 +29,7 @@ primrose/
 Clone this repository:
 
 git clone https://github.com/vrhsr/primrose.git
+
 cd primrose
 
 
