@@ -1,26 +1,30 @@
 
 ### Project Structure
 
-primrose/
+primrose
 │
+
 ├── app.py
+
 ├── requirements.txt
+
 ├── README.md
 │
-├── data/
-│   └── sample_claims.csv
-│
-├── models/
-│   ├── label_encoder.joblib
-│   ├── logreg_pipeline.joblib
-│   ├── rf_pipeline.joblib
-│   ├── xgb_bundle.joblib
-│   └── xgb_pipeline.joblib
-│
-├── outputs/
-│   ├── logs/
-│   ├── reports/
-│   └── figures/
+
+├── data
+│   ── sample_claims.csv
+
+├── models
+│   ── label_encoder.joblib
+│   ── logreg_pipeline.joblib
+│   ── rf_pipeline.joblib
+│   ── xgb_bundle.joblib
+│   ── xgb_pipeline.joblib
+
+├── outputs
+│   ── logs/
+│   ── reports/
+│   ── figures/
 
 ### Installation
 
