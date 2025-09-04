@@ -189,18 +189,28 @@ def plot_roc_curve(roc_data):
 # -------------------------------
 # Prediction + Analysis
 # -------------------------------
+def load_excel_dynamic(file):
+    df_raw = pd.read_excel(file, header=None)
+    # Assume CPT Code is always in column B (index 1)
+    header_row = df_raw.index[df_raw.iloc[:,1] == "CPT Code"][0]
+    df = pd.read_excel(file, header=header_row)
+    return df
+
+
+
 def predict_from_file(file):
     try:
         if hasattr(file, 'name') and file.name.endswith(".csv"):
             df = pd.read_csv(file)
         elif hasattr(file, 'name') and (file.name.endswith(".xlsx") or file.name.endswith(".xls")):
-            df = pd.read_excel(file)
+            df = load_excel_dynamic(file)
         else:
             if isinstance(file, str):
                 if file.endswith(".csv"):
                     df = pd.read_csv(file)
                 else:
-                    df = pd.read_excel(file)
+                    df = load_excel_dynamic(file)
+
             else:
                 return "Invalid file format", None, None, None, None, None, "N/A", "N/A", "N/A", "N/A", None, None, None, None, pd.DataFrame()
 
@@ -382,7 +392,9 @@ def predict_from_file(file):
             "N/A", "N/A", "N/A", "N/A",
             empty_plot, empty_plot, empty_plot, empty_plot,
             empty_df
-        )
+        ) 
+
+
 
 # -------------------------------
 # Gradio App (Organized UI)
