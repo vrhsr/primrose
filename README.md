@@ -51,6 +51,15 @@ Running on local URL:  http://127.0.0.1:7860
 
 Running on public URL: https://76281562845dceb3dd.gradio.live
 
+📝⭕ #### Recommendation:
+
+Before uploading a file to the Gradio web app, remove any blank rows or extra notes above the header row.
+
+Ensure the header row contains all required columns: CPT Code, Insurance Company, Physician Name, Payment Amount, Balance.
+
+In contrast, the Jupyter Notebook version automatically detects the header row, so it works even with uncleaned files.
+
+
 once it's running you'll be redirected to a website 
 where you find dropbox to upload 
 <img width="1904" height="394" alt="image" src="https://github.com/user-attachments/assets/9bb162e8-0362-4810-a0c6-d2d5593feb1a" />
