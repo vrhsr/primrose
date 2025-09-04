@@ -45,4 +45,4 @@ python app.py
 
 Running on local URL:  http://127.0.0.1:7860
 
-Running on public URL: https://b17747416539cc1828.gradio.live
+Running on public URL: https://76281562845dceb3dd.gradio.live
