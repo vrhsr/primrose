@@ -1,5 +1,5 @@
 
-### Project Structure
+### <ins>Project Structure </ins>
 
 primrose
 │
@@ -26,7 +26,7 @@ primrose
 │   ── reports/
 │   ── figures/
 
-### Installation
+### <ins>Installation</ins>
 
 git clone https://github.com/vrhsr/primrose.git
 
@@ -41,17 +41,17 @@ pip install -r requirements.txt
 
 jupyter notebook primrose.ipynb
 
-### Start the application:
+### <ins> Start the application:</ins>
 
 python app.py
 
-### Console Output
+### <ins>Console Output </ins>
 
 Running on local URL:  http://127.0.0.1:7860
 
 Running on public URL: https://76281562845dceb3dd.gradio.live
 
- ### 📝⭕Recommendation:
+ ### 📝⭕<ins>Recommendation: </ins>
 
 Before uploading a file to the Gradio web app, remove any blank rows or extra notes above the header row.
 
@@ -72,13 +72,13 @@ Insights
 Visualizations
 Predictions Table" 
 
-#### Model Performance
+#### <ins>Model Performance</ins>
 
 <img width="1801" height="925" alt="image" src="https://github.com/user-attachments/assets/fd66548e-8fc7-4a62-949c-0a51b3b5f7ea" />
 <img width="1782" height="206" alt="image" src="https://github.com/user-attachments/assets/c84dd526-224c-4a6b-93d3-107c376c9976" />
 
 
-### insights  
+### <ins>insights</ins>  
 
 <img width="1816" height="708" alt="image" src="https://github.com/user-attachments/assets/7545fb7f-1c3c-42de-96ce-6ccf0c3855e1" />
 
