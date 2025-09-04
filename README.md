@@ -51,7 +51,7 @@ Running on local URL:  http://127.0.0.1:7860
 
 Running on public URL: https://76281562845dceb3dd.gradio.live
 
-📝⭕ #### Recommendation:
+ ### 📝⭕Recommendation:
 
 Before uploading a file to the Gradio web app, remove any blank rows or extra notes above the header row.
 
