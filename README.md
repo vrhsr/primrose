@@ -49,7 +49,8 @@ Running on public URL: https://76281562845dceb3dd.gradio.live
 
 once it's running you'll be redirected to a website 
 where you find dropbox to upload 
-<img width="1891" height="257" alt="image" src="https://github.com/user-attachments/assets/bfe906fa-aacc-4f5b-8e72-6e0f055a49e6" />
+<img width="1904" height="394" alt="image" src="https://github.com/user-attachments/assets/9bb162e8-0362-4810-a0c6-d2d5593feb1a" />
+
 
 once you uploaded the file you could see these tabs 
 
